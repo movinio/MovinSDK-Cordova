@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;movinsdk.d&quot; | MovinSDK</title>
+	<title>MovinTileStyleScaling | MovinSDK</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -907,20 +907,83 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class="current tsd-kind-enum tsd-parent-kind-module tsd-is-not-exported">
+			<a href="_movinsdk_d_.movin.movintilestylescaling.html" class="tsd-kind-icon">Movin<wbr>Tile<wbr>Style<wbr>Scaling</a>
+			<ul>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-not-exported">
+					<a href="_movinsdk_d_.movin.movintilestylescaling.html#fixed" class="tsd-kind-icon">fixed</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-not-exported">
+					<a href="_movinsdk_d_.movin.movintilestylescaling.html#scaled" class="tsd-kind-icon">scaled</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-comment">
+			<div class="tsd-comment tsd-typography">
+				<div class="lead">
+					<p>Contains all available scaling options of drawable components.</p>
+				</div>
+			</div>
+		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section tsd-is-not-exported">
-						<h3>Modules</h3>
+						<h3>Enumeration members</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-module tsd-parent-kind-external-module tsd-is-not-exported"><a href="_movinsdk_d_.movin.html" class="tsd-kind-icon">Movin</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-not-exported"><a href="_movinsdk_d_.movin.movintilestylescaling.html#fixed" class="tsd-kind-icon">fixed</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-not-exported"><a href="_movinsdk_d_.movin.movintilestylescaling.html#scaled" class="tsd-kind-icon">scaled</a></li>
 						</ul>
 					</section>
+				</div>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<h2>Enumeration members</h2>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-not-exported">
+				<a name="fixed" class="tsd-anchor"></a>
+				<h3>fixed</h3>
+				<div class="tsd-signature tsd-kind-icon">fixed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in movinsdk.d.ts:1081</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The size will always be equal to the image or font size. Effectively this means that if the user zooms out the
+						POI/text will appear to become larger.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>type</dt>
+						<dd><p>{number}</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-not-exported">
+				<a name="scaled" class="tsd-anchor"></a>
+				<h3>scaled</h3>
+				<div class="tsd-signature tsd-kind-icon">scaled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in movinsdk.d.ts:1087</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The size will only be equal to the image or font size on the zoom level defined by a fixed zoom level.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>type</dt>
+						<dd><p>{number}</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 		</section>

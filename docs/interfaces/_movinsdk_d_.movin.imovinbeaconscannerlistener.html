@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;movinsdk.d&quot; | MovinSDK</title>
+	<title>IMovinBeaconScannerListener | MovinSDK</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -907,21 +907,142 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class="current tsd-kind-interface tsd-parent-kind-module">
+			<a href="_movinsdk_d_.movin.imovinbeaconscannerlistener.html" class="tsd-kind-icon">IMovin<wbr>Beacon<wbr>Scanner<wbr>Listener</a>
+			<ul>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="_movinsdk_d_.movin.imovinbeaconscannerlistener.html#isvalidnearestbeacon" class="tsd-kind-icon">is<wbr>Valid<wbr>Nearest<wbr>Beacon</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="_movinsdk_d_.movin.imovinbeaconscannerlistener.html#onbeaconsranged" class="tsd-kind-icon">on<wbr>Beacons<wbr>Ranged</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="_movinsdk_d_.movin.imovinbeaconscannerlistener.html#onnearestbeaconchanged" class="tsd-kind-icon">on<wbr>Nearest<wbr>Beacon<wbr>Changed</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-hierarchy">
+			<h3>Hierarchy</h3>
+			<ul class="tsd-hierarchy">
+				<li>
+					<span class="target">IMovinBeaconScannerListener</span>
+				</li>
+			</ul>
+		</section>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
-					<section class="tsd-index-section tsd-is-not-exported">
-						<h3>Modules</h3>
+					<section class="tsd-index-section ">
+						<h3>Methods</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-module tsd-parent-kind-external-module tsd-is-not-exported"><a href="_movinsdk_d_.movin.html" class="tsd-kind-icon">Movin</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_movinsdk_d_.movin.imovinbeaconscannerlistener.html#isvalidnearestbeacon" class="tsd-kind-icon">is<wbr>Valid<wbr>Nearest<wbr>Beacon</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_movinsdk_d_.movin.imovinbeaconscannerlistener.html#onbeaconsranged" class="tsd-kind-icon">on<wbr>Beacons<wbr>Ranged</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_movinsdk_d_.movin.imovinbeaconscannerlistener.html#onnearestbeaconchanged" class="tsd-kind-icon">on<wbr>Nearest<wbr>Beacon<wbr>Changed</a></li>
 						</ul>
 					</section>
 				</div>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="isvalidnearestbeacon" class="tsd-anchor"></a>
+				<h3>is<wbr>Valid<wbr>Nearest<wbr>Beacon</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<wbr>Nearest<wbr>Beacon<span class="tsd-signature-symbol">(</span>beacon<span class="tsd-signature-symbol">: </span><a href="../classes/_movinsdk_d_.movin.movinrangedbeacon.html" class="tsd-signature-type">MovinRangedBeacon</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in movinsdk.d.ts:2455</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The implementation of this function decides whether a beacon can be passed on to onNearestBeaconChanged.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>beacon: <a href="../classes/_movinsdk_d_.movin.movinrangedbeacon.html" class="tsd-signature-type">MovinRangedBeacon</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The beacon to decide for.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						<p>A value indicating whether the specified beacon may be passed on to onNearestBeaconChanged.</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="onbeaconsranged" class="tsd-anchor"></a>
+				<h3>on<wbr>Beacons<wbr>Ranged</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">on<wbr>Beacons<wbr>Ranged<span class="tsd-signature-symbol">(</span>beacons<span class="tsd-signature-symbol">: </span><a href="../classes/_movinsdk_d_.movin.movinrangedbeacon.html" class="tsd-signature-type">MovinRangedBeacon</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in movinsdk.d.ts:2461</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>This function is called when beacons have been ranged.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>beacons: <a href="../classes/_movinsdk_d_.movin.movinrangedbeacon.html" class="tsd-signature-type">MovinRangedBeacon</a><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The ranged beacons.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="onnearestbeaconchanged" class="tsd-anchor"></a>
+				<h3>on<wbr>Nearest<wbr>Beacon<wbr>Changed</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">on<wbr>Nearest<wbr>Beacon<wbr>Changed<span class="tsd-signature-symbol">(</span>beacon<span class="tsd-signature-symbol">?: </span><a href="../classes/_movinsdk_d_.movin.movinrangedbeacon.html" class="tsd-signature-type">MovinRangedBeacon</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in movinsdk.d.ts:2448</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>This function is called when the nearest beacon has changed.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> beacon: <a href="../classes/_movinsdk_d_.movin.movinrangedbeacon.html" class="tsd-signature-type">MovinRangedBeacon</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The new nearest beacon. This value can be null if the device is no longer.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer>
